@@ -49,21 +49,28 @@ export default function App() {
   return (
     <div className="min-h-screen bg-pink-50 font-sans antialiased text-gray-800 select-none">
       {/* Global Interactive Tap-to-Heart Effect */}
-      {/* Show only after unlocking */}
-{isUnlocked && <FloatingHearts />}
+      <FloatingHearts />
 
-{isUnlocked && (
-  <Navbar
-    currentSection={page}
-    setPage={setPage}
-  />
-)}
+      {/* Top Navbar */}
+      <Navbar currentSection={page} setPage={setPage} />
 
-...
+      {/* Main Page View with Animated Transition */}
+      <main>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={page}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -15 }}
+            transition={{ duration: 0.35, ease: "easeInOut" }}
+          >
+            {renderPage()}
+          </motion.div>
+        </AnimatePresence>
+      </main>
 
-{isUnlocked && (
-  <MusicPlayer isUnlocked={isUnlocked} />
-)}
+      {/* Floating Background Music Player */}
+      <MusicPlayer isUnlocked={isUnlocked} />
     </div>
   );
 }
