@@ -143,7 +143,7 @@ export default function Bouquet({ setPage }) {
           transition={{ duration: 0.3 }}
           className="text-3xl md:text-5xl font-black bg-gradient-to-r from-pink-600 via-rose-500 to-purple-600 bg-clip-text text-transparent tracking-wide pb-4 pt-2 overflow-visible leading-normal"
         >
-          💐 For Manjari 💐
+          💐 For You Babe 💐
         </motion.h1>
 
         {/* Romantic Message Banner */}
