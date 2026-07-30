@@ -64,47 +64,59 @@ export default function MusicPlayer({ isUnlocked }) {
 
         {/* Player Controls & Info */}
         <AnimatePresence>
-          {(expanded || isPlaying) && (
-            <motion.div
-              initial={{ width: 0, opacity: 0 }}
-              animate={{ width: "auto", opacity: 1 }}
-              exit={{ width: 0, opacity: 0 }}
-              className="flex items-center gap-3 overflow-hidden pr-2 text-sm font-medium text-gray-700 whitespace-nowrap"
-            >
-              <div className="flex flex-col">
-                <span className="text-xs font-bold text-pink-600">Our Song 🎵</span>
-                <span className="text-[10px] text-gray-400">Romantic Melody</span>
-              </div>
+  {expanded && (
+    <motion.div
+      initial={{ width: 0, opacity: 0 }}
+      animate={{ width: "auto", opacity: 1 }}
+      exit={{ width: 0, opacity: 0 }}
+      transition={{ duration: 0.3 }}
+      className="flex items-center gap-3 overflow-hidden pr-2 text-sm font-medium text-gray-700 whitespace-nowrap"
+    >
+      <div className="flex flex-col">
+        <span className="text-xs font-bold text-pink-600">
+          Our Song 🎵
+        </span>
+        <span className="text-[10px] text-gray-400">
+          Romantic Melody
+        </span>
+      </div>
 
-              {/* Sound Bars Animation */}
-              {isPlaying && (
-                <div className="flex items-end gap-0.5 h-4 px-1">
-                  <motion.div animate={{ height: ["20%", "100%", "40%"] }} transition={{ repeat: Infinity, duration: 0.6 }} className="w-1 bg-pink-500 rounded-full" />
-                  <motion.div animate={{ height: ["60%", "30%", "90%"] }} transition={{ repeat: Infinity, duration: 0.8 }} className="w-1 bg-rose-400 rounded-full" />
-                  <motion.div animate={{ height: ["90%", "20%", "70%"] }} transition={{ repeat: Infinity, duration: 0.5 }} className="w-1 bg-pink-400 rounded-full" />
-                </div>
-              )}
+      {isPlaying && (
+        <div className="flex items-end gap-0.5 h-4 px-1">
+          <motion.div
+            animate={{ height: ["20%", "100%", "40%"] }}
+            transition={{ repeat: Infinity, duration: 0.6 }}
+            className="w-1 bg-pink-500 rounded-full"
+          />
+          <motion.div
+            animate={{ height: ["60%", "30%", "90%"] }}
+            transition={{ repeat: Infinity, duration: 0.8 }}
+            className="w-1 bg-rose-400 rounded-full"
+          />
+          <motion.div
+            animate={{ height: ["90%", "20%", "70%"] }}
+            transition={{ repeat: Infinity, duration: 0.5 }}
+            className="w-1 bg-pink-400 rounded-full"
+          />
+        </div>
+      )}
 
-              {/* Play/Pause Button */}
-              <button
-                onClick={togglePlay}
-                className="w-8 h-8 rounded-full bg-pink-100 hover:bg-pink-200 text-pink-600 flex items-center justify-center transition"
-                title={isPlaying ? "Pause" : "Play"}
-              >
-                {isPlaying ? <FiPause size={14} /> : <FiPlay size={14} className="ml-0.5" />}
-              </button>
+      <button
+        onClick={togglePlay}
+        className="w-8 h-8 rounded-full bg-pink-100 hover:bg-pink-200 text-pink-600 flex items-center justify-center transition"
+      >
+        {isPlaying ? <FiPause size={14} /> : <FiPlay size={14} />}
+      </button>
 
-              {/* Mute Button */}
-              <button
-                onClick={toggleMute}
-                className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition"
-                title={isMuted ? "Unmute" : "Mute"}
-              >
-                {isMuted ? <FiVolumeX size={14} /> : <FiVolume2 size={14} />}
-              </button>
-            </motion.div>
-          )}
-        </AnimatePresence>
+      <button
+        onClick={toggleMute}
+        className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center transition"
+      >
+        {isMuted ? <FiVolumeX size={14} /> : <FiVolume2 size={14} />}
+      </button>
+    </motion.div>
+  )}
+</AnimatePresence>
       </motion.div>
     </div>
   );
