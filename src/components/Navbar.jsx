@@ -13,7 +13,7 @@ export default function Navbar({ currentSection, setPage }) {
       <div className="flex items-center gap-2 cursor-pointer" onClick={() => setPage("welcome")}>
         <span className="text-2xl">🧸</span>
         <span className="font-bold text-base sm:text-lg bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent inline-block pb-1 pt-0.5 leading-normal">
-          Manjari's Special
+          Girlfriend Day Special
         </span>
       </div>
 
