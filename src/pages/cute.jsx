@@ -3,13 +3,13 @@ import { motion, AnimatePresence } from "framer-motion";
 import { FiSend, FiHeart } from "react-icons/fi";
 
 const initialMessages = [
-  { id: 1, sender: "me", text: "Hey Beautiful ❤️", time: "10:00 AM" },
-  { id: 2, sender: "you", text: "Hmmm? 😊", time: "10:01 AM" },
-  { id: 3, sender: "me", text: "Do you know you're my favorite person in the entire world?", time: "10:01 AM" },
-  { id: 4, sender: "you", text: "Really? 🥹💖", time: "10:02 AM" },
-  { id: 5, sender: "me", text: "Every single second of every day. ❤️", time: "10:02 AM" },
-  { id: 6, sender: "me", text: "You're the main reason I smile when I check my phone.", time: "10:03 AM" },
-  { id: 7, sender: "you", text: "Awww 🧸❤️ You always know how to make me blush!", time: "10:03 AM" },
+  { id: 1, sender: "me", text: "Babbbyyy❤️", time: "10:00 AM" },
+  { id: 2, sender: "you", text: "Haaa bolo 😊", time: "10:01 AM" },
+  { id: 3, sender: "me", text: "Ek baat bolni hai ", time: "10:01 AM" },
+  { id: 4, sender: "you", text: "Haa bolooo", time: "10:02 AM" },
+  { id: 5, sender: "me", text: "I love youuu babyyy sabse jyda 🥹❤️❤️", time: "10:02 AM" },
+  { id: 6, sender: "me", text: "Babyy apko mai bht pyar karta and humesa karunga ", time: "10:03 AM" },
+  { id: 7, sender: "you", text: "Awww bbbyyy I love you moreee bbby", time: "10:03 AM" },
   { id: 8, sender: "me", text: "Happy Girlfriend's Day, my love Manjari! 🌸✨", time: "10:04 AM" },
 ];
 
