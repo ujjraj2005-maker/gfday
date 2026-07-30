@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiHeart, FiSearch, FiStar } from "react-icons/fi";
-
 const reasons = [
   "Your beautiful, radiant smile 😊",
   "You always know how to make me laugh ❤️",
@@ -18,8 +17,42 @@ const reasons = [
   "The warm hugs you give that melt all my stress away 🧸",
   "The cute way you say my name 💬",
   "Because you are simply one of a kind ❤️",
+  "Your gentle heart makes the world brighter 🌷",
+  "You make every moment feel special 💫",
+  "Your little happy dances are the cutest 🕺💕",
+  "You always know the right words to comfort me 🤍",
+  "Your voice is my favorite sound 🎶",
+  "You make even boring days exciting 🌈",
+  "Your confidence inspires me every day 🌟",
+  "Your patience amazes me 💛",
+  "You love with your whole heart 💖",
+  "The way you care for everyone around you 🌹",
+  "Your silly jokes always make me smile 😆",
+  "You make me feel safe and loved 🤗",
+  "Your positivity is contagious ☀️",
+  "You never stop encouraging me 🌸",
+  "The way your face lights up when you're happy ✨",
+  "You make my world more colorful 🎨",
+  "Your sweet good morning messages ☕❤️",
+  "The excitement in your eyes when you see me 🥰",
+  "Your honesty and loyalty mean everything 💎",
+  "You always celebrate my little achievements 🎉",
+  "Your random acts of kindness melt my heart 🌼",
+  "The way you listen so carefully 🫶",
+  "You make me believe in forever 💍",
+  "Your hugs feel like home 🏡❤️",
+  "You make my heart feel at peace 🌙",
+  "Your beautiful soul shines brighter than the stars ⭐",
+  "You accept me exactly as I am 🤍",
+  "The way you make every memory unforgettable 📸",
+  "You make love feel effortless 💕",
+  "Your playful side always makes me smile 😋",
+  "You bring happiness wherever you go 🌺",
+  "Every conversation with you becomes my favorite 💬💖",
+  "You make my dreams feel possible 🌠",
+  "Because life is infinitely better with you in it ❤️",
+  "Because loving you is the easiest and happiest thing I've ever done 💞",
 ];
-
 export default function Reason({ setPage }) {
   const [filter, setFilter] = useState("");
 
