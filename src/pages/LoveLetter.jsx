@@ -31,7 +31,7 @@ export default function LoveLetter({ setPage }) {
 
         <div className="text-gray-800 leading-relaxed text-xl md:text-2xl font-handwriting space-y-4 text-left max-w-lg mx-auto bg-pink-50/70 p-8 rounded-3xl border border-pink-200/80 shadow-inner relative">
           <p className="font-bold text-pink-600 text-2xl md:text-3xl font-cursive pb-1 tracking-wide">
-            Dearest Manjari,
+            Dearest Manjari My love,
           </p>
 
           <p className="leading-relaxed">
