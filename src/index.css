@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@utility font-handwriting {
+  font-family: 'Caveat', 'Dancing Script', cursive, sans-serif;
+}
+
+@utility font-cursive {
+  font-family: 'Dancing Script', 'Caveat', cursive, sans-serif;
+}
+
+.font-handwriting {
+  font-family: 'Caveat', 'Dancing Script', cursive, sans-serif;
+}
+
+.font-cursive {
+  font-family: 'Dancing Script', 'Caveat', cursive, sans-serif;
+}
