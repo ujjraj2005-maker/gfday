@@ -40,7 +40,7 @@ export default function Welcome({ setPage }) {
           className="text-2xl sm:text-3xl font-extrabold text-gray-800 mt-2 flex items-center justify-center gap-2 pb-1"
         >
           <FiHeart className="text-pink-500 fill-pink-500 shrink-0" />
-          <span className="leading-relaxed inline-block pb-1">Manjari</span>
+          <span className="leading-relaxed inline-block pb-1">Manjari My love </span>
           <FiHeart className="text-pink-500 fill-pink-500 shrink-0" />
         </motion.h2>
 
