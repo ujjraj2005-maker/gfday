@@ -79,7 +79,7 @@ export default function Passcode({ setPage, onUnlock }) {
 
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-relaxed py-2">
             <span className="bg-gradient-to-r from-pink-600 to-rose-500 bg-clip-text text-transparent inline-block pb-4 pt-2 overflow-visible tracking-wide">
-              Hi Manjari
+              Hello Babu
             </span>{" "}
             <span className="inline-block text-rose-500">❤️</span>
           </h1>
@@ -115,7 +115,7 @@ export default function Passcode({ setPage, onUnlock }) {
             onClick={() => setShowHint(!showHint)}
             className="mt-3 text-xs text-pink-600 font-medium hover:underline flex items-center justify-center gap-1 mx-auto"
           >
-            <FiHelpCircle size={13} /> {showHint ? "Passcode is 1409" : "Need a hint?"}
+            <FiHelpCircle size={13} /> {showHint ? "Aww hint chiye! umm assan hi hai bbe try karo😚" : "Need a hint?"}
           </button>
         </div>
 
