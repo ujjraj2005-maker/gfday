@@ -36,7 +36,7 @@ export default function Together({ setPage }) {
           ❤️ Time Together ❤️
         </h1>
         <p className="mt-3 text-gray-600 text-base max-w-md mx-auto">
-          Every single second with you, Manjari, adds magic to my life.
+          Every single second with you, My Love , adds magic to my life.
         </p>
       </motion.div>
 
