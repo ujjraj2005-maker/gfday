@@ -26,13 +26,6 @@ export default function Navbar({ currentSection, setPage }) {
           <span>Menu</span>
         </button>
 
-        <button
-          onClick={() => setPage("final")}
-          className="flex items-center gap-1.5 px-4 py-1.5 rounded-full bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 text-white font-medium text-sm transition shadow-md"
-        >
-          <FiHeart size={15} />
-          <span>Surprise</span>
-        </button>
       </div>
     </motion.header>
   );
