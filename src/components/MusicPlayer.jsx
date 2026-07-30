@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FiMusic, FiPause, FiPlay, FiVolume2, FiVolumeX } from "react-icons/fi";
-import musicFile from "../assets/music/LAAVAN - Jasmine Sandlas.mp3";
+import musicFile from "../assets/music/The Ronettes - Be My Baby (Lyrics) - 7clouds Rock (128k).mp3";
 
 export default function MusicPlayer({ isUnlocked }) {
   const audioRef = useRef(null);
