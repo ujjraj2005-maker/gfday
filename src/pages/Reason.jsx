@@ -52,6 +52,7 @@ const reasons = [
   "You make my dreams feel possible 🌠",
   "Because life is infinitely better with you in it ❤️",
   "Because loving you is the easiest and happiest thing I've ever done 💞",
+  "And mannnyy moreee bbbyy ❤️😍💖❣️💕💘❤️😍💖❣️💕💘❤️😍💖❣️💕💘❤️😍💖❣️💕💘❤️😍💖❣️💕💘❤️😍💖❣️💕💘❤️😍💖"
 ];
 export default function Reason({ setPage }) {
   const [filter, setFilter] = useState("");
