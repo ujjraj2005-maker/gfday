@@ -9,7 +9,7 @@ const cards = [
   { title: "Time Together", desc: "Live relationship milestone counter", emoji: "⌛", page: "together", color: "from-rose-400 to-pink-500" },
   { title: "Best GF Award", desc: "Official certificate of excellence", emoji: "🏆", page: "award", color: "from-yellow-400 to-amber-500" },
   { title: "Final Surprise", desc: "A sparkling night surprise", emoji: "🌙", page: "final", color: "from-indigo-600 to-purple-700" },
-  {title: "Sketch Something",desc: "Draw something special just for me ❤️",emoji: "🎨",page: "draw",color: "from-pink-500 to-red-500",},
+  
 ];
 
 export default function Welcome({ setPage }) {
